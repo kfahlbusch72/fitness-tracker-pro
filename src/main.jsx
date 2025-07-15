@@ -7,17 +7,14 @@ import { BrowserRouter } from "react-router-dom";
 
 import { AuthProvider } from "./auth/AuthContext";
 import { ApiProvider } from "./api/ApiContext";
-import { PageProvider } from "./layout/PageContext";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <AuthProvider>
       <ApiProvider>
-        <PageProvider>
-          <Layout>
-            <App />
-          </Layout>
-        </PageProvider>
+        <Layout>
+          <App />
+        </Layout>
       </ApiProvider>
     </AuthProvider>
   </BrowserRouter>
