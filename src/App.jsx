@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+import ActivityDetails from "./activities/ActivityDetails.jsx";
 import Register from "./auth/Register";
 import Login from "./auth/Login";
 import ActivitiesPage from "./activities/ActivitiesPage";

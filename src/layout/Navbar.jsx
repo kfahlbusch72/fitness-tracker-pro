@@ -17,7 +17,7 @@ export default function Navbar() {
       <nav>
         <Link to="/activities">Activities</Link>
         {token ? (
-          <a onClick={handleLogout}>Log out</a>
+          <button onClick={handleLogout}>Log out</button>
         ) : (
           <>
             <Link to="/register">Register</Link>
